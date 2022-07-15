@@ -2,25 +2,38 @@ using System;
 //This stuff is basically Business Logic
 namespace Bakery.Models
 {
-  public class Bakery
-  {
-    private string Bread;
-    private string Pastries;
+  public class Bread
+  { //Create & make variables private
+    private string _bread;
+    private int _price;
 
-    public Bakery(string Bread, string Pastries)
+    public Bread(string bread, int price)
     {
-      Bread = bread;
-      Pastries = pastries;
+      _bread = bread;
+      _price = price;
     }
 
-    public bool SelectionBread(string selectBread)
+    //Get-ting the private variables
+    public string GetBread()
     {
-      return (Bread == selectBread);
+      return _bread;
     }
 
-    public bool SelectionPastry(string selectPastry)
+    public int GetPrice()
     {
-      return (Pastries == selectPastry);
+      return _price;
     }
+
+    // //Methods for Bread & Pastry selections
+
+    // public bool SelectionBread(string selectBread)
+    // {
+    //   return (_bread == selectBread);
+    // }
+
+    // public bool SelectionPastry(string selectPastry)
+    // {
+    //   return (_pastries == selectPastry);
+    // }
   }
 }
