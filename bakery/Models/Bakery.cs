@@ -23,6 +23,13 @@ namespace Bakery.Models
     {
       return _price;
     }
+
+    //Method for bread selection
+
+    public bool SelectBread(string selectBread)
+    {
+    return (_bread == selectBread);
+    }
   }
 //------------------------------------------------------------------
     public class Pastries
@@ -37,7 +44,7 @@ namespace Bakery.Models
     }
 
     //Get-ting the private variables
-    public string GetPastry()
+    public string GetPastries()
     {
       return _pastries;
     }
@@ -47,16 +54,11 @@ namespace Bakery.Models
       return _price;
     }
 
-    // //Methods for Bread & Pastry selections
+    //Method for Pastry selection
 
-    // public bool SelectionBread(string selectBread)
-    // {
-    //   return (_bread == selectBread);
-    // }
-
-    // public bool SelectionPastry(string selectPastry)
-    // {
-    //   return (_pastries == selectPastry);
-    // }
+    public bool SelectPastry(string selectPastry)
+    {
+      return (_pastries == selectPastry);
+    }
   }
 }
