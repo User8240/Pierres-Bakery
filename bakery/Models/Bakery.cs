@@ -23,6 +23,29 @@ namespace Bakery.Models
     {
       return _price;
     }
+  }
+//------------------------------------------------------------------
+    public class Pastries
+  { //Create & make variables private
+    private string _pastries;
+    private int _price;
+
+    public Pastries(string pastries, int price)
+    {
+      _pastries = pastries;
+      _price = price;
+    }
+
+    //Get-ting the private variables
+    public string GetPastry()
+    {
+      return _pastries;
+    }
+
+    public int GetPrice()
+    {
+      return _price;
+    }
 
     // //Methods for Bread & Pastry selections
 
