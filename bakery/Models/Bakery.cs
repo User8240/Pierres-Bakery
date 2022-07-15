@@ -17,7 +17,7 @@ namespace Bakery.Models
     public Bread(int quantity)
     {
       _Price = Price;
-      _Deal = 0.5;
+      _Deal = 0;
       Quantity = quantity;
     }
 
