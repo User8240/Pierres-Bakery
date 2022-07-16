@@ -1,5 +1,5 @@
 using System;
-//This stuff is basically Business Logic
+
 namespace Bakery.Models
 {
   public class Bread
@@ -82,5 +82,5 @@ namespace Bakery.Models
       }
       return pastryTotal;
     }
-  }
-}  
+  }   
+}
